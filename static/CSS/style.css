@@ -6,7 +6,7 @@ Common
 
 
 .posts li .option_icon {
-width: 2%;
+width: 4%;
 position: relative;
 left: 90%;
 }
@@ -22,7 +22,7 @@ width: 33px;
 }
 
 .content{
-    max-height: 600px;
+    max-width: 600px;
     height: 100%;
     margin: 0 auto;
     border-left: 1px solid #ccc;
@@ -40,6 +40,7 @@ post
 .post_form {
     padding: 20px 40px;
     border-bottom: 1px solid #ccc;
+    border-top: 1px solid #ccc;
 }
 .post_form .name {
     font-size: 20px;
@@ -53,7 +54,8 @@ post
 }
 
 .post_form textarea {
-    width: 70%;
+    width: 77%;
+    height: 97px;
 }
 
 
@@ -63,6 +65,9 @@ post
 
 .posts li .name_body {
     flex-basis: 85%;
+}
+li{
+    list-style: none;
 }
 
 .posts li .name_body .name {
@@ -83,7 +88,7 @@ post
 }
 
 .posts li .option {
-    display: none;
+
     position: absolute;
     top: 40px;
     right: 15px;
@@ -92,9 +97,48 @@ post
     padding: 10px 15px;
     font-size: 13px;
     border-radius: 3px;
+    display: none;
+    flex-direction: column;
 }
 .posts li .option a {
 text-decoration: none;
 }
+a img{
+    width: 30px;
+}
+div.home{
+    display: flex;
+    align-items: center;
+}
+div.home img{
+    width:50px;
+    border-radius:50% ;
+}
 
+div.flex{
+    display: flex;
+    align-items: center;
+}
 
+div.image img{
+    margin-left: 100px;
+    width: 50%;
+    border-radius: 20px;
+}
+li{
+    padding-left: 30px;
+    border: 1px solid #ccc;
+    position: relative;
+}
+a.like {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+a.like p{
+    margin-left: 15px;
+    
+}
+.post_form.edit_form{
+    border: 1px solid #ccc;
+}
